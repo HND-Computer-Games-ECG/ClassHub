@@ -13,6 +13,8 @@ namespace ClassHub
         private List<string> names;
         private SpriteFont placeholderText;
 
+        private List<ClickyButton> clickyButtons;
+
         private MouseState ms_curr;
 
         public Game1()
@@ -55,6 +57,8 @@ namespace ClassHub
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             placeholderText = Content.Load<SpriteFont>("Arial07");
+
+            clickyButtons = new List<ClickyButton>();
         }
 
         protected override void Update(GameTime gameTime)
