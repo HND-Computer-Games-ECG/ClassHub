@@ -20,9 +20,9 @@ namespace ClassHub
             _frame = new Rectangle(xPos, yPos, img.Width, img.Height);
         }
 
-        public void DrawMe(SpriteBatch sb, MouseState ms_curr)
+        public void DrawMe(SpriteBatch sb, MouseState ms)
         {
-            if (_frame.Contains(ms_curr.Position))
+            if (_frame.Contains(ms.Position))
                 sb.Draw(_txr, _frame, Color.White);
             else
                 sb.Draw(_txr, _frame, Color.LightGray);
