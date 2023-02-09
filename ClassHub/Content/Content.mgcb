@@ -32,7 +32,15 @@
 /processorParam:TextureFormat=Color
 /build:Avatar92.jpg
 
+<<<<<<< Updated upstream
 #begin LewSco.png
+=======
+<<<<<<< HEAD
+#begin LewSco.png
+=======
+#begin f1.jpg
+>>>>>>> 6ca6d7285e7574e59279660b183820d700b68e2f
+>>>>>>> Stashed changes
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -42,5 +50,13 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+<<<<<<< Updated upstream
 /build:LewSco.png
+=======
+<<<<<<< HEAD
+/build:LewSco.png
+=======
+/build:f1.jpg
+>>>>>>> 6ca6d7285e7574e59279660b183820d700b68e2f
+>>>>>>> Stashed changes
 
