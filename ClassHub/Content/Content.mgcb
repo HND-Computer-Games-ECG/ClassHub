@@ -44,6 +44,18 @@
 /processorParam:TextureFormat=Color
 /build:Avatar92.jpg
 
+#begin f1.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:f1.jpg
+
 #begin Kenzie.PNG
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -68,7 +80,7 @@
 /processorParam:TextureFormat=Color
 /build:LewSco.png
 
-#begin f1.jpg
+#begin MicrosoftTeams-image.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -78,4 +90,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:f1.jpg
+/build:MicrosoftTeams-image.png
+
