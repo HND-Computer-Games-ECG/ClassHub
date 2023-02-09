@@ -18,8 +18,10 @@ namespace ClassHub
 
         private SpriteFont placeholderFont;
 
-        private List<Placeholder> widgetGrid;
+        private List<Placeholder> placeHolders;
         private List<string> names;
+
+        private List<ClickyButton> clickyButtons;
 
         private MouseState ms_curr;
 
@@ -68,63 +70,64 @@ namespace ClassHub
             int size = 92, spacing = 24;
             int rowLength = 6;
             int i = 0;
-            widgetGrid = new List<Placeholder>();
+            clickyButtons = new List<ClickyButton>();
+            placeHolders = new List<Placeholder>();
 
-            widgetGrid.Add(new ClickyButton(Content.Load<Texture2D>("Avatars\\Avatar92"), x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            widgetGrid.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
         }
@@ -149,9 +152,14 @@ namespace ClassHub
 
             _spriteBatch.Begin();
 
-            for (int i = 0; i < widgetGrid.Count; i++)
+            for (int i = 0; i < placeHolders.Count; i++)
             {
-                widgetGrid[i].DrawMe(GraphicsDevice, _spriteBatch, placeholderFont, ms_curr);
+                placeHolders[i].DrawMe(GraphicsDevice, _spriteBatch, placeholderFont, ms_curr);
+            }
+
+            for (int i = 0; i < clickyButtons.Count; i++)
+            {
+                clickyButtons[i].DrawMe(_spriteBatch, ms_curr);
             }
 
             _spriteBatch.End();
