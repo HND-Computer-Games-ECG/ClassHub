@@ -112,7 +112,7 @@ namespace ClassHub
             placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
             i++;
 
-            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            clickyButtons.Add(new ClickyButton(Content.Load<Texture2D>("LewSco"), x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing)));
             i++;
 
             placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
