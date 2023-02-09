@@ -82,7 +82,7 @@ namespace ClassHub
             clickyButtons.Add(new ClickyButton(Content.Load<Texture2D>("f1"), x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing)));
             i++;
 
-            placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
+            clickyButtons.Add(new ClickyButton(Content.Load<Texture2D>("Kenzie"), x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing)));
             i++;
 
             placeHolders.Add(new Placeholder(new Rectangle(x + (i % rowLength) * (size + spacing), y + (i / rowLength) * (size + spacing), size, size), names[i]));
