@@ -11,8 +11,8 @@ namespace ClassHub
 {
     class Placeholder
     {
-        private Rectangle _rect;
-        private string _label;
+        protected Rectangle _rect;
+        protected string _label;
 
         public Placeholder(Rectangle frame, string label)
         {
@@ -20,7 +20,12 @@ namespace ClassHub
             _label = label;
         }
 
-        public void DrawMe(GraphicsDevice gd, SpriteBatch sb, SpriteFont font, MouseState ms)
+        public virtual bool UpdateMe(MouseState ms)
+        {
+            return false;
+        }
+
+        public virtual void DrawMe(GraphicsDevice gd, SpriteBatch sb, SpriteFont font, MouseState ms)
         {
             var tint = Color.Black;
 
@@ -30,6 +35,5 @@ namespace ClassHub
             HelperFuncs.DrawRect(gd, sb, _rect, tint);
             sb.DrawString(font, _label, new Vector2(_rect.Right - 2, _rect.Bottom - 2) - font.MeasureString(_label), tint);
         }
-
     }
 }
