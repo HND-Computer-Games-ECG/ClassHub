@@ -49,7 +49,7 @@ namespace ClassHub
                 "Noah",
                 "Ross",
                 "Alvin",
-                "Lewis", // hey mum look at me, im on github
+                "Lewis", // hey mum look at me, im on github - you're soooo cool.
                 "Gastao",
                 "MateuszS",
                 "Juan",
