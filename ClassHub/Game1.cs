@@ -34,6 +34,7 @@ namespace ClassHub
 
         protected override void Initialize()
         {
+            // this is the list of names in all the class
             names = new List<string>
             {
                 "Nigel",
